@@ -11,7 +11,7 @@ document.querySelector(".person-card__timeframes").addEventListener("click", (e)
 })
 
 async function fetchData() {
-    const response = await fetch("./data.json")
+    const response = await fetch("/data.json")
     if (response.ok)
         return response.json()
 }
